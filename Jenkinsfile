@@ -12,5 +12,10 @@ pipeline {
                 sh 'docker build -t node-app .'
             }
         }
+        stage('deploy') {
+            steps {
+                sh 'docker run -itd -p 8081:8081 node-app'
+            }
+        }
     }
 }
