@@ -1,8 +1,13 @@
-node{
-
-stage ('scm checkout') {
-
-git 'https://github.com/AshutoshAM2002/node-hello.git'
+pipeline {
+    agent any
     
-    }
+ stages {
+      stage('checkout') {
+           steps {
+             
+                git branch: 'master', url: 'https://github.com/devops4solutions/CI-CD-using-Docker.git'
+             
+          }
+        }
+ }
 }
