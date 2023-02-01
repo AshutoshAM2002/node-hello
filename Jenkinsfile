@@ -14,7 +14,7 @@ pipeline {
         }
         stage('deploy') {
             steps {
-                sh 'docker run -itd -p 8081:8081 node-app'
+                sh 'docker run -itd -p 3000:3000 node-app'
             }
         }
     }
