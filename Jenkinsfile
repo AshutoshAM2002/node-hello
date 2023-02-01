@@ -9,7 +9,6 @@ pipeline {
         }
         stage('Build') {
             steps {
-                sh 'sudo su root'
                 sh 'docker build .'
             }
         }
