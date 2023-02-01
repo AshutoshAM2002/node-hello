@@ -1,8 +1,8 @@
 node{
 
-stage (‘scm checkout’) {
+stage ('scm checkout') {
 
-git ‘https://github.com/AshutoshAM2002/node-hello.git'
+git 'https://github.com/AshutoshAM2002/node-hello.git'
     
     }
 }
