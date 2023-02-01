@@ -9,8 +9,8 @@ pipeline {
         }
         stage('Build') {
             steps {
-        
-                sh 'echo @#@# | sudo -S docker build .'
+                sh 'sudo su root'
+                sh 'docker build .'
             }
         }
     }
