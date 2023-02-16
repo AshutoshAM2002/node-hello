@@ -5,6 +5,7 @@ pipeline {
         stage('checkout') {
             steps {
                 git branch: 'main', url: 'https://github.com/AshutoshAM2002/node-hello.git'
+                sh echo "hello"
             }
         }
         stage('Build') {
